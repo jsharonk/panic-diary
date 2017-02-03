@@ -5,48 +5,70 @@
         <meta charset="utf-8"/>
         <title>panic diary</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
   
     <h1>panic diary</h1>
         <br>
         <br>
+          <div id='emotions' class="app">
+              <div class="columns">
 
-            <audio controls>
-                <source src="emotions/depression.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
-                  
-            <audio controls>
-                <source src="emotions/Dread.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
-            
-            <audio controls>
-                <source src="emotions/smiling Tightly And Falsely.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
-            
-               <audio controls>
-                <source src="emotions/New Recording 11.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
+                <div class="col-sm-4">
+                     <!--<audio id="dread-audio" src="emotions/Dread.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio><img id="dread-img" onclick= document.getElementById("dread-audio").play() src="images/dreadIMG.jpg" alt="throwup churning chunks froze in throat dread" height=300px width=40%>-->
 
-            <audio controls>
-                <source src="emotions/regret.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
-            <audio controls>
-                <source src="emotions/panic.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
-            <audio controls>
-                <source src="emotions/self loathing.ogg" type="audio/ogg">
-                if you can see this, update your browser
-            </audio>
-         
-      
+                 
+                      <audio id="dread-audio" src="emotions/Dread.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio><img id="dread-img" onclick= document.getElementById("dread-audio").play() src="images/dreadIMG.jpg" alt="throwup churning chunks froze in throat dread" height=300px width=40%>
 
-    
+                    <audio id="smilingfalsely-audio" src="emotions/smiling Tightly And Falsely.ogg" type="audio/ogg">
+                        if you can see this, update your browser
+                    </audio><img id="smilingfalsely-img" onclick=document.getElementById("smilingfalsely-audio").play() src="images/smilingfalselyIMG.jpg" alt="smiling tightly and falsely" height=300px width=40%>
+                </div>
+
+                <div class="col-sm-4">
+                    <!--<img id="depression-img" src="images/depressionIMG.jpg" alt="depression smog quicksand take me down" height=300px width=40%>-->
+                    <!--<audio controls onClick="playEmotion()">
+                        <source id="depression-audio" src="emotions/New Recording 11.ogg" type="audio/ogg">
+                        if you can see this, update your browser
+                    </audio>-->
+                     <audio id="depression-audio" src="emotions/New Recording 11.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio><img id="depression-img" onclick= document.getElementById("depression-audio").play() src="images/depressionIMG.jpg" alt="depression smog quicksand take me down" height=300px width=40%>
+
+                    <audio id="anxiety-audio" src="emotions/regret.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio><img id="anxiety-img" onclick= document.getElementById("anxiety-audio").play() src="images/anxietyIMG.jpg" alt="grinding thoughts to dust anxiety" height=300px width=40%>
+
+                    
+                </div>
+
+                <div class="col-sm-4">
+                    <audio id="panic-audio" src="emotions/panic.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio><img id="panic-img"  onclick= document.getElementById("panic-audio").play() src="images/panicIMG.jpg" alt="heart thudding in ears panic" height=300px width=40%>
+
+                   <audio id="selfloathing-audio" src="emotions/self Loathing.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio><img id="selfloathing-img"  onclick= document.getElementById("selfloathing-audio").play() src="images/selfloathingIMG.jpg" alt="self-loathing puddling warm quickly cold underpants" height=300px width=40%>
+                </div>
+           
+             </div>
+          </div>
+
+     <!--<script>
+       const depressionImg = document.querySelector("#depression-img");
+       const depressionAudio = document.querySelector('#depression-audio');
+
+       depressionImg.addEventListener('onclick', playEmotion);
+
+       function playEmotion() {
+           console.log('playing emotion');
+           depressionAudio.play();
+       }
+     </script>-->
     </body>
 </html>
