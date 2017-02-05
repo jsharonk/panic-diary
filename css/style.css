@@ -107,22 +107,31 @@ html {
     }*/
   }
 
- p {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   color: darkgray;
-   font-size: 25px;
-   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-   
-   -ms-transform: rotate(7deg); /* IE 9 */
-   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-   transform: rotate(7deg);
-   letter-spacing: 1px;
-   
- }
- p:hover {
-  background-color: black;
- }
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgray;
+    font-size: 25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+    letter-spacing: 1px;
+    
+  }
+    p:hover {
+      background-color: black;
+    }
+    #footer {
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+        }
 
+    h6 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 /*
   .circle1 {
     background: lightblue;
