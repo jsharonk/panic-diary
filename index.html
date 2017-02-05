@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <body>
+  
     <head>
         <meta charset="utf-8"/>
         <title>panic diary</title>
@@ -8,67 +8,116 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
   
-    <h1>panic diary</h1>
-        <br>
-        <br>
-          <div id='emotions' class="app">
-              <div class="columns">
+    <body>
+          <div class="container">
+            <div id="header">                             
+                <span class='letter'>p</span>
+                <span class='letter'>l</span>
+                <span class='letter'>a</span>
+                <span class='letter'>y</span>
+                <span class='letter'>i</span>
+                <span class='letter'>t</span>
+                <span class='letter'>o</span>
+                <span class='letter'>u</span>
+                <span class='letter'>t</span>
+            </div>
+
+              <div class="emotions concentric-circles">
 
                 <div class="col-sm-2">
-                
-                    <audio id="square1" src="audio/27.ogg" type="audio/ogg" preload="auto">
+                    <audio id="circle1" src="audio/27.ogg" type="audio/ogg" preload="auto" loop>
                         if you can see this, update your browser
-                    </audio> <div class="square1" onclick= document.getElementById("square1").play()  alt="depression smog quicksand take me down"></div>
+                    </audio><div class="circle1" onclick= document.getElementById("circle1").play()  alt="waves of regret keep rolling in"></div>       
                     
                  </div>
-                 <div class="col-sm-2">
-                    <audio id="square2" src="audio/24.ogg" type="audio/ogg" preload="auto">
-                        if you can see this, update your browser
-                    </audio> <div class="square2" onclick= document.getElementById("square2").play()  alt="throwup churning chunks froze in throat dread"></div>
-                </div>
-               
-
-                
-                <div class="col-sm-2">
-               
-                    <audio id="square3" src="audio/eleven Copy Copy.ogg" type="audio/ogg" preload="auto">
-                        if you can see this, update your browser
-                    </audio> <div class="square3" onclick= document.getElementById("square3").play()  alt="depression smog quicksand take me down"></div>
-                </div>
 
                  <div class="col-sm-2">
-                     <audio id="square4" src="audio/eighteen.ogg" type="audio/ogg" preload="auto">
+                    <audio id="circle2" src="audio/24.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
-                    </audio> <div class="square3" onclick= document.getElementById("square4").play()  alt="grinding thoughts to dust anxiety"></div>
+                    </audio><div class="circle2" onclick= document.getElementById("circle2").play()  alt="throwup churning chunks froze in throat dread"></div>
                     
                 </div>
 
+                
                 <div class="col-sm-2">
-                  
-                    <audio id="square5" src="audio/27.ogg" type="audio/ogg" preload="auto">
+                    <audio id="circle3" src="audio/eleven Copy Copy.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
-                    </audio> <div class="square5" onclick= document.getElementById("square5").play()  alt="heart thudding in ears panic"></div>
+                    <!--</audio> <div class="circle3" onclick= document.getElementByClassName("circle3").play()  alt="depression smog quicksand take me down"></div>-->
+                     </audio> <div class="circle3" onclick= document.getElementById("circle3").play()  alt="depression smog quicksand take me down"></div>
+
+                </div>
+
+                 <div class="col-sm-2">
+                     <audio id="circle4" src="audio/eighteen.ogg" type="audio/ogg" preload="auto">
+                        if you can see this, update your browser
+                    </audio> <div class="circle4" onclick= document.getElementById("circle4").play()  alt="heart thudding in ears panic"></div>      
+                </div>
+
+                <div class="col-sm-2">
+                    <audio id="circle5" src="audio/27.ogg" type="audio/ogg" preload="auto" loop>
+                        if you can see this, update your browser
+                    </audio> <div class="circle5" onclick= document.getElementById("circle5").play()  alt="grinding thoughts to dust anxiety"></div>
                  </div>
+
                 <div class="col-sm-2">
-                     <audio id="square6" src="audio/sixteen.ogg" type="audio/ogg" preload="auto">
+                     <audio class="circle6" src="audio/sixteen.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
-                    </audio> <div class="square6" onclick= document.getElementById("square6").play()  alt="self-loathing"></div>
-            
+                    </audio> <div class="circle6" onclick= document.getElementById("circle6").play()  alt="fear and self-loathing all alone"></div>
                 </div>
            
            
           </div>
+        </div>
 
-     <!--<script>
-       const depressionImg = document.querySelector("#depression-img");
-       const depressionAudio = document.querySelector('#depression-audio');
+     <script>
+    //    const depressionImg = document.querySelector("#depression-img");
+    //    const depressionAudio = document.querySelector('#depression-audio');
 
-       depressionImg.addEventListener('onclick', playEmotion);
+    //    depressionImg.addEventListener('onclick', playEmotion);
 
-       function playEmotion() {
-           console.log('playing emotion');
-           depressionAudio.play();
-       }
-     </script>-->
+    //    function playEmotion() {
+    //        console.log('playing emotion');
+    //        depressionAudio.play();
+    //    }
+    //    const depression = document.getElementById('circle3')
+    // //    const anxiety =
+    // //    const dread = 
+    // //    const panic =
+    // //    const fearAndLoathing = 
+    // //    const regret
+    //     let context;
+    //     window.addEventListener('load', init, false);
+        
+    //     function init() {
+    //         try {
+    //         window.AudioContext = 
+    //             window.AudioContext || window.webkitAudioContext;
+    //             context = new AudioContext();
+    //         }
+    //         catch(e) {
+    //             'web audio api is not supported in this browser';
+    //         }
+    //     }
+
+    //     function loadEmotionSound(url) {
+    //         let request = new XMLHttpRequest();
+    //         request.open('GET', url, true);
+    //         request.responseType = 'arraybuffer';
+
+    //         request.onload = function() {
+    //             context.decodeAudioData(request.response, function(buffer) {
+    //                 wavesOfRegret = buffer;
+    //             } ,onError);
+    //         }
+    //         request.send();
+    //     }
+
+    //     function playSound(buffer) {
+    //         let source = context.createBufferSource();
+    //         source.buffer = buffer;
+    //         source.connect(context.destination);
+    //         source.start(0);
+    //     }
+     </script>
     </body>
 </html>

@@ -1,84 +1,350 @@
-.square1 {
-  background: #00aa9d;
-  border-radius: 3px;
-  height: 150px;
-  margin: 100px;
-  position: absolute;
-  transition: transform 0.8s;
-  width: 150px;
+
+html {
+    box-sizing: "border-box"
+  }
+
+  .container {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto 0 auto;
+  }
+
+  #header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10em;
+  }
+
+  /*div {
+    transition: all 3s 1s;
+  }*/
+
+
+  /*.circle1 {
+    background: lightblue;
+    border-radius: 50%;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    transition: transform 0.8s;
+    width: 150px;
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }
+
+  .circle2 {
+    background: cornflowerblue;
+    border-radius: 50%;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+    
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }
+
+  .circle3 {
+    background: royalblue;
+    border-radius: 50%;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+    
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }
+    
+
+  .circle4 {
+    background: blueviolet;
+    border-radius: 50%;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+    
+      &:hover {
+        transform: translate(20px, 20px);
+        
+    }
+  }
+
+
+  .circle5 {
+    background:thistle;
+    border-radius: 50%;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+    
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }
+    
+
+  .circle6 {
+    background:navy;
+    border-radius: 50%;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+    
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }*/
+
+
+  .circle1 {
+    background: lightblue;
+     width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }
+
+  .circle2 {
+    background: cornflowerblue;
+     width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    
+      &:hover {
+        transform: translate(20px, 20px);
+    }
+  }
+
+  .circle3 {
+    background: royalblue;
+     width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+      /*&:hover {
+        transform: translate(20px, 20px);
+    }*/
+  }
+    
+
+  .circle4 {
+    background: blueviolet;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    
+      /*&:hover {
+        transform: translate(20px, 20px);
+        
+    }*/
+  }
+
+
+  .circle5 {
+    background:thistle;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 50%;
+    background-color: lightslategrey;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    
+      /*&:hover {
+        transform: translate(20px, 20px);
+    }*/
+  }
+    
+
+  .circle6 {
+    background:navy;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 50%;
+    
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    
+      /*&:hover {
+        transform: translate(20px, 20px);
+    }*/
+  }
+
+
+
+.concentric-circles:hover {
+  transform: translateX(-50%) scale(1.2);
 }
 
-.square2 {
-  background: #2b3f53;
-  border-radius: 3px;
-  height: 150px;
-  margin: 100px;
-  transition: transform 0.8s;
-  position: absolute;
-  width: 150px;
+@-webkit-keyframes ripple {
+  20% {
+    box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px navy;
+  }
   
-    &:hover {
-      transform: translate(20px, 20px);
+  50% {
+    box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222,
+                0px 0px 0px 14px #fff,
+                0px 0px 2px 16px #888;
+  }
+  
+  100% {
+    box-shadow: 0px 0px 0px 6px #fff,
+                0px 0px 0px 8px #222,
+                0px 0px 0px 14px #fff,
+                0px 0px 2px 16px #888, 
+                0px 0px 0px 22px #fff,
+                0px 0px 5px 24px #ddd;
   }
 }
 
-.square3 {
-  background: navy;
-  border-radius: 3px;
-  height: 150px;
-  margin: 100px;
-  transition: transform 0.8s;
-  position: absolute;
-  width: 150px;
-  
-    &:hover {
-      transform: translate(20px, 20px);
-  }
-}
-  
 
-.square4 {
-  background: blueviolet;
-  border-radius: 3px;
-  height: 150px;
+/*<style>
+    body, html {
+        text-align: center;
+        font-size: 90px;
+        font-family: Poiret One;
+        height: 100%;
+        background: -webkit-linear-gradient(315deg, #723362, #9d223c);
+        background: linear-gradient(135deg, #723362, #9d223c);
+        overflow: hidden;
+        color: white;
+    }
+ 
+    .letter {
+        position: relative;
+        top: -webkit-calc(50% - 60px);
+        top: calc(50% - 60px);
+        text-shadow: 0px 0px 3px white;
+    }
+    .letter:nth-child(1) {
+        -webkit-animation: fade 4s infinite 200ms;
+        animation: fade 4s infinite 200ms;
+    }
+    .letter:nth-child(2) {
+        -webkit-animation: fade 4s infinite 400ms;
+        animation: fade 4s infinite 400ms;
+    }
+    .letter:nth-child(3) {
+        -webkit-animation: fade 4s infinite 600ms;
+        animation: fade 4s infinite 600ms;
+    }
+    .letter:nth-child(4) {
+        -webkit-animation: fade 4s infinite 800ms;
+        animation: fade 4s infinite 800ms;
+    }
+    .letter:nth-child(5) {
+        -webkit-animation: fade 4s infinite 1000ms;
+        animation: fade 4s infinite 1000ms;
+    }
+    .letter:nth-child(6) {
+        -webkit-animation: fade 4s infinite 1200ms;
+        animation: fade 4s infinite 1200ms;
+    }
+    .letter:nth-child(7) {
+        -webkit-animation: fade 4s infinite 1400ms;
+        animation: fade 4s infinite 1400ms;
+    }
+     .letter:nth-child(8) {
+        -webkit-animation: fade 4s infinite 1600ms;
+        animation: fade 4s infinite 1600ms;
+    }
+     .letter:nth-child(9) {
+        -webkit-animation: fade 4s infinite 1800ms;
+        animation: fade 4s infinite 1800ms;
+    }*/
+/*.container {
   margin: 100px;
-  transition: transform 0.8s;
-  position: absolute;
-  width: 150px;
-  
-    &:hover {
-      transform: translate(20px, 20px);
-  }
 }
-  
 
-.square5 {
-  background: darkslateblue;
-  border-radius: 3px;
-  height: 150px;
-  margin: 100px;
-  transition: transform 0.8s;
-  position: absolute;
-  width: 150px;
+.circle {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
   
-    &:hover {
-      transform: translate(20px, 20px);
+  .container:hover & {
+    transform: translateX(200px);
   }
 }
-  
 
-.square6 {
-  background: darkslategray;
-  border-radius: 3px;
-  height: 150px;
-  margin: 100px;
-  transition: transform 0.8s;
-  position: absolute;
-  width: 150px;
-  
-    &:hover {
-      transform: translate(20px, 20px);
-  }
+.circle1 {
+  @extend .circle;
+  background: PaleTurquoise;
+  transition: all 1.5s linear;
+} 
+
+.circle2 {
+  @extend .circle;
+  background: salmon;
+  transition: all 1.5s ease;
 }
-  
-  
+
+.circle3 {
+   @extend .circle;
+  background: lightskyblue;
+  transition: all 1.5s ease-in;
+}
+
+.circle4 {
+  @extend .circle;
+  background: khaki;
+  transition: all 1.5s ease-out;
+}
+
+.circle5 {
+  @extend .circle;
+  background: mediumturquoise;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle6 {
+  @extend .circle;
+  background: thistle;
+  transition: all 1.5s cubic-bezier(0,1,.98,0); 
+}*/
