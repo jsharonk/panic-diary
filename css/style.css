@@ -15,143 +15,47 @@ html {
     font-size: 10em;
   }
 
-  /*div {
+  div {
     transition: all 3s 1s;
-  }*/
-
-
-  /*.circle1 {
-    background: lightblue;
-    border-radius: 50%;
-    height: 150px;
-    margin: 100px;
-    position: absolute;
-    transition: transform 0.8s;
-    width: 150px;
-      &:hover {
-        transform: translate(20px, 20px);
-    }
   }
-
-  .circle2 {
-    background: cornflowerblue;
-    border-radius: 50%;
-    height: 150px;
-    margin: 100px;
-    transition: transform 0.8s;
-    position: absolute;
-    width: 150px;
-    
-      &:hover {
-        transform: translate(20px, 20px);
-    }
-  }
-
-  .circle3 {
-    background: royalblue;
-    border-radius: 50%;
-    height: 150px;
-    margin: 100px;
-    transition: transform 0.8s;
-    position: absolute;
-    width: 150px;
-    
-      &:hover {
-        transform: translate(20px, 20px);
-    }
-  }
-    
-
-  .circle4 {
-    background: blueviolet;
-    border-radius: 50%;
-    height: 150px;
-    margin: 100px;
-    transition: transform 0.8s;
-    position: absolute;
-    width: 150px;
-    
-      &:hover {
-        transform: translate(20px, 20px);
-        
-    }
-  }
-
-
-  .circle5 {
-    background:thistle;
-    border-radius: 50%;
-    height: 150px;
-    margin: 100px;
-    transition: transform 0.8s;
-    position: absolute;
-    width: 150px;
-    
-      &:hover {
-        transform: translate(20px, 20px);
-    }
-  }
-    
-
-  .circle6 {
-    background:navy;
-    border-radius: 50%;
-    height: 150px;
-    margin: 100px;
-    transition: transform 0.8s;
-    position: absolute;
-    width: 150px;
-    
-      &:hover {
-        transform: translate(20px, 20px);
-    }
-  }*/
 
 
   .circle1 {
     background: lightblue;
-     width: 80px;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 50%;
     border-radius: 50%;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    animation: ripple 2.0s 0.2s infinite;
-    -webkit-animation: ripple 2.0s 0.2s  infinite;
-      &:hover {
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    transition: transform 0.8s;
+    width: 150px;
+      /*&:hover {
         transform: translate(20px, 20px);
-    }
+    }*/
   }
 
   .circle2 {
     background: cornflowerblue;
-     width: 80px;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 50%;
     border-radius: 50%;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    animation: ripple 2.0s 0.2s infinite;
-    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
     
-      &:hover {
+      /*&:hover {
         transform: translate(20px, 20px);
-    }
+    }*/
   }
 
   .circle3 {
     background: royalblue;
-     width: 80px;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 50%;
     border-radius: 50%;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    animation: ripple 2.0s 0.2s infinite;
-    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+    
       /*&:hover {
         transform: translate(20px, 20px);
     }*/
@@ -160,17 +64,14 @@ html {
 
   .circle4 {
     background: blueviolet;
-    width: 80px;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 50%;
     border-radius: 50%;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    animation: ripple 2.0s 0.2s infinite;
-    -webkit-animation: ripple 2.0s 0.2s  infinite;
-    
-      /*&:hover {
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
+/*    
+      &:hover {
         transform: translate(20px, 20px);
         
     }*/
@@ -179,16 +80,12 @@ html {
 
   .circle5 {
     background:thistle;
-    width: 80px;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 50%;
-    background-color: lightslategrey;
     border-radius: 50%;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    animation: ripple 2.0s 0.2s infinite;
-    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
     
       /*&:hover {
         transform: translate(20px, 20px);
@@ -198,29 +95,180 @@ html {
 
   .circle6 {
     background:navy;
-    width: 80px;
-    height: 80px;
-    margin-top: 50px;
-    margin-left: 50%;
-    
     border-radius: 50%;
-    transform: translateX(-50%);
-    transition: all 0.2s ease-in-out;
-    animation: ripple 2.0s 0.2s infinite;
-    -webkit-animation: ripple 2.0s 0.2s  infinite;
+    height: 150px;
+    margin: 100px;
+    transition: transform 0.8s;
+    position: absolute;
+    width: 150px;
     
       /*&:hover {
         transform: translate(20px, 20px);
     }*/
   }
 
+ p {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: darkgray;
+   font-size: 25px;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   
+   -ms-transform: rotate(7deg); /* IE 9 */
+   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+   transform: rotate(7deg);
+   letter-spacing: 1px;
+   
+ }
+ p:hover {
+  background-color: black;
+ }
+
+/*
+  .circle1 {
+    background: lightblue;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    
+    position:relative;
+    top:100px;
+    left:300px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+
+  .circle2 {
+    background: cornflowerblue;
+     height:100px;
+    width:100px;
+    border-radius:50%;    
+    position:relative;
+    top:100px;
+    left:300px;
+  
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+
+  .circle3 {
+    background: royalblue;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    
+    position:relative;
+    top:100px;
+    left:300px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+    
+
+  .circle4 {
+    background: blueviolet;
+    
+     height:100px;
+      width:100px;
+      border-radius:50%;
+      
+      position:relative;
+      top:100px;
+      left:300px;
+      
+      -webkit-transition:height .25s ease, width .25s ease;
+      transition:height .25s ease, width .25s ease;
+      
+      -webkit-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+  }
 
 
-.concentric-circles:hover {
+  .circle5 {
+    /*background:thistle;*/
+    
+    /*background-color: lightslategrey;
+     height:100px;
+    width:100px;
+    border-radius:50%;
+    
+    position:relative;
+    top:100px;
+    left:300px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }
+    
+
+  .circle6 {
+    background:navy;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    
+    position:relative;
+    top:100px;
+    left:300px;
+    
+    -webkit-transition:height .25s ease, width .25s ease;
+    transition:height .25s ease, width .25s ease;
+    
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  }*/
+
+
+/*
+.emotions:hover {
   transform: translateX(-50%) scale(1.2);
+}*/
+
+
+/*.emotions:hover{
+  height:150px;
+  width:150px;
+}
+.emotions:before {
+  -webkit-animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
+}
+.emotions:after {
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
 }
 
-@-webkit-keyframes ripple {
+.emotions:hover:before,
+.emotions:hover:after {
+  -webkit-animation: none;
+  animation: none;
+}
+@-webkit-keyframes ripple{
+  0% {-webkit-transform:scale(1); }
+  75% {-webkit-transform:scale(1.75); opacity:1;}
+  100% {-webkit-transform:scale(2); opacity:0;}
+}
+
+@keyframes ripple{
+  0% {transform:scale(1); }
+  75% {transform:scale(1.75); opacity:1;}
+  100% {transform:scale(2); opacity:0;}
+}*/
+
+/*@-webkit-keyframes ripple {
   20% {
     box-shadow: 0px 0px 0px 6px #fff,
                 0px 0px 0px 8px navy;
@@ -241,7 +289,7 @@ html {
                 0px 0px 0px 22px #fff,
                 0px 0px 5px 24px #ddd;
   }
-}
+}*/
 
 
 /*<style>
@@ -297,8 +345,8 @@ html {
      .letter:nth-child(9) {
         -webkit-animation: fade 4s infinite 1800ms;
         animation: fade 4s infinite 1800ms;
-    }*/
-/*.container {
+    }
+.container {
   margin: 100px;
 }
 
