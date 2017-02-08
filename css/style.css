@@ -129,10 +129,10 @@ html {
             bottom: 0;
         }
 
-    h6 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-     
-    }
+   .guidelines {
+     display: inline-block;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 3em;
 /*
   .circle1 {
     background: lightblue;
