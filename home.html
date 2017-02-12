@@ -4,13 +4,18 @@
     <head>
         <meta charset="utf-8"/>
         <title>panic diary</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/d3.v3.js"></script>
+      
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
   
     <body>
-          <div class="container">
-            <div id="header" class="container-fluid">                             
+          <div class="container row">
+              <div id="header" class="container-fluid">                             
                 <span class='letter'>p</span>
                 <span class='letter'>l</span>
                 <span class='letter'>a</span>
@@ -19,114 +24,126 @@
                 <span class='letter'>t</span>
                 <span class='letter'>o</span>
                 <span class='letter'>u</span>
-                <span class='letter'>t</span>
-            </div>
-                <div class= "guidelines">
-                (click any and all that apply)
-                </div>
-              <div class="emotions concentric-circles">
+                <span class='letter'>t</span></div>
+            
 
-                <div class="col-sm-2">
+                <div class='row col-md-12'>
+                    <div class= "guidelines">(click any and all that apply)</div>
+                </div>
+              
+
+              <div class="emotions concentric-circles row" align="center">
+
+                <div class="col-sm-2 col-md-2">
                     <audio id="circle1" class="circle" src="audio/27.ogg" type="audio/ogg" preload="auto" loop>
                         if you can see this, update your browser
                     </audio><div class="circle1" onclick= document.getElementById("circle1").play()  alt="waves of regret keep rolling in"><p>waves of regret keep rolling in</p></div>         
                  </div>
                  
-                 <div class="col-sm-2">  
+                 <div class="col-sm-2 col-md-2">  
                     <audio id="circle2" class="circle" src="audio/24.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
                     </audio><div class="circle2" onclick= document.getElementById("circle2").play()  alt="throwup churning chunks froze in throat dread"><p>throw up churning chunks froze in throat dread</p></div>
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-md-2">
                     <audio id="circle3" class="circle" src="audio/eleven Copy Copy.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
                      </audio> <div class="circle3" onclick= document.getElementById("circle3").play()  alt="depression smog quicksand take me down"><p>depression smog quicksand take me down</p></div>
                 </div>
                 
-                 <div class="col-sm-2">
+                 <div class="col-sm-2 col-md-2">
                      <audio id="circle4" class="circle" src="audio/eighteen.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
                     </audio> <div class="circle4" onclick= document.getElementById("circle4").play()  alt="blood in ears and lungs panic"><p>blood in ears and lungs panic</p></div>      
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-md-2">
                     <audio id="circle5" class="circle" src="audio/27.ogg" type="audio/ogg" preload="auto" loop>
                         if you can see this, update your browser
                     </audio> <div class="circle5" onclick= document.getElementById("circle5").play()  alt="grinding thoughts to dust anxiety"><p>grinding thoughts to dust anxiety</p></div>
                  </div>
 
-    
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-md-2">
                      <audio id="circle6" class="circle" src="audio/sixteen.ogg" type="audio/ogg" preload="auto">
                         if you can see this, update your browser
-                    </audio> <div class="circle6" onclick= document.getElementById("circle6").play()  alt="fear and self-loathing all alone"><p>fear and self-loathing all alone</p></div>
+                    </audio> <div class="circle6" onclick= document.getElementById("circle6").play()  alt="fear and self-loathing all alone"><p>fear and self-loathing all alone</p></div> 
+                </div>
                 
-                </div>
-       
-            <div id='footer'>
-
-                <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2230204&f=16777215&b=0" border="0" height="18" width="83" alt="web counter">
-                    <br>
-                  <h6>you are not alone</h6>
-
-                </div>
-
+                 <div id='footer'>
+                    <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2230204&f=16777215&b=0" border="0" height="18" width="83" alt="web counter">
+                        <br>
+                      <h6>you are not alone</h6>
+                 </div>
             </div>
-    
-           
           </div>
+<!--m-->
+            
+    
+    <!--<textarea style="display:none;" id="exported"></textarea>
+    <div class="row">
+        <div class="header">
+         
+          <span>Mousemove:
+          <select id="mousemoveSelector">
+            <option id="mousemove-yoloswag"       value="yoloswag"      >` #yoloswag</option>
+            <option id="mousemove-circlereverse"  value="circlereverse" >1 Circles In</option>
+            <option id="mousemove-basiccircle"    value="basiccircle"   >2 Circles Out</option>
+            <option id="mousemove-triangles"      value="triangles"     >3 Triangles</option>
+            <option id="mousemove-hexagon"        value="hexagon"       >4 Hexagon</option>
+            <option id="mousemove-fireworks"      value="fireworks"     >5 Fireworks</option>
+            <option id="mousemove-miniworks"      value="miniworks" selected>6 Mini Fireworks</option>
+            <option id="mousemove-foursquare"     value="foursquare"    >7 Four Square</option>
+            <option id="mousemove-jazz"           value="jazz"          >8 Jazz</option>
+            <option id="mousemove-confetti"       value="confetti"      >9 Confetti</option>
+            <option id="mousemove-linestomouse"   value="linestomouse"  >0 Lines to Mouse</option>
+            <option id="mousemove-biglines"       value="biglines"      >- Big Lines</option>
+            <option id="mousemove-drawing"        value="drawing"       >= Drawing</option>
+          </select>
+          </span>
+
+          <span>Click:
+          <select id="mousedownSelector">
+            <option id="mousedown-yoloswag"       value="yoloswag"      >` #yoloswag</option>
+            <option id="mousedown-circlereverse"  value="circlereverse" >1 Circles In</option>
+            <option id="mousedown-basiccircle"    value="basiccircle"   >2 Circles Out</option>
+            <option id="mousedown-triangles"      value="triangles"     >3 Triangles</option>
+            <option id="mousedown-hexagon"        value="hexagon" selected>4 Hexagon</option>
+            <option id="mousedown-fireworks"      value="fireworks"     >5 Fireworks</option>
+            <option id="mousedown-miniworks"      value="miniworks"     >6 Mini Fireworks</option>
+            <option id="mousedown-foursquare"     value="foursquare"    >7 Four Square</option>
+            <option id="mousedown-jazz"           value="jazz"          >8 Jazz</option>
+            <option id="mousedown-confetti"       value="confetti"      >9 Confetti</option>
+            <option id="mousedown-linestomouse"   value="linestomouse"  >0 Lines to Mouse</option>
+            <option id="mousedown-biglines"       value="biglines"      >- Big Lines</option>
+            <option id="mousedown-drawing"        value="drawing"       >= Drawing</option>
+          </select>
+          </span>
+          <a style="color: #00FFFF; font-family: Lato; font-weight:200" href="https://github.com/gruiz17/explosions">Source Code</a>
         </div>
-
-     <script>
-    //    const depressionImg = document.querySelector("#depression-img");
-    //    const depressionAudio = document.querySelector('#depression-audio');
-
-    //    depressionImg.addEventListener('onclick', playEmotion);
-
-    //    function playEmotion() {
-    //        console.log('playing emotion');
-    //        depressionAudio.play();
-    //    }
-    //    const depression = document.getElementById('circle3')
-    // //    const anxiety =
-    // //    const dread = 
-    // //    const panic =
-    // //    const fearAndLoathing = 
-    // //    const regret
-    //     let context;
-    //     window.addEventListener('load', init, false);
+    </div>-->
+    
+    <div id="svgContainer"></div>
+    <script type="text/javascript" src="js/string.js"></script>
+    <script type="text/javascript" src="js/visuals.js"></script>
+    <script type="text/javascript" src="js/explosions.js"></script>       
+    
         
-    //     function init() {
-    //         try {
-    //         window.AudioContext = 
-    //             window.AudioContext || window.webkitAudioContext;
-    //             context = new AudioContext();
-    //         }
-    //         catch(e) {
-    //             'web audio api is not supported in this browser';
-    //         }
-    //     }
-
-    //     function loadEmotionSound(url) {
-    //         let request = new XMLHttpRequest();
-    //         request.open('GET', url, true);
-    //         request.responseType = 'arraybuffer';
-
-    //         request.onload = function() {
-    //             context.decodeAudioData(request.response, function(buffer) {
-    //                 wavesOfRegret = buffer;
-    //             } ,onError);
-    //         }
-    //         request.send();
-    //     }
-
-    //     function playSound(buffer) {
-    //         let source = context.createBufferSource();
-    //         source.buffer = buffer;
-    //         source.connect(context.destination);
-    //         source.start(0);
-    //     }
+<!--m-->
+     <script>
+        <script type="text/javascript" src="js/d3.v3.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38880263-3']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
      </script>
+     </script>
+
     </body>
 </html>
