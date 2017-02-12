@@ -10,3 +10,6 @@ i tend to feel a cocktail of several at least /
 different combinations /
 different timing /
 play it out /
+
+
+d3 visualization: https://github.com/gruiz17/explosions/blob/master/index.html
